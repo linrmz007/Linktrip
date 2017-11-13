@@ -1,0 +1,218 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+.app-bar span {
+	color: white;
+}
+
+.app-bar button{
+  display: none;
+}
+
+.sign-in{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.linktrip-logo{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 350px;
+}
+
+.linktrip-logo h1{
+  font-size: 500%
+}
+
+input.sigin-in-button{
+  background-color: #0090F7;
+  border-color: #0090f7;
+  color: white;
+}
+
+.persona-header {
+   margin-left: 212px;
+   width: 950px;
+}
+
+.persona-header h2{
+  margin-top: 30px;
+}
+
+div.persona-test{
+  margin-left: 212px;
+  width: 1200px;
+}
+/*@font-face {
+  font-family:'norwester';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url('../norwester.ttf') format('ttf')
+  }*/
+
+  button.kep-login-facebook.metro{
+    padding:7%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #0090f7;
+    border-radius: 4px;
+    border-color: #0090f7;
+  }
+
+  .persona-q{
+    margin-left: 315px;
+    margin-top: 40px;
+    font-weight: bolder;
+  }
+
+  .persona-header-p{
+    margin-bottom: 3px;
+    font-weight: lighter;
+  }
+
+  .multiple-ops{
+    margin-left: 60px;
+  }
+
+  .question-pp{
+    font-weight: bolder;
+  }
+
+  .button-primary{
+    margin-left: 40%;
+    margin-top: 25px;
+  }
+
+  .match-made{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .match-info{
+    margin:0;
+  }
+
+  .match-info button {
+    margin: 0;
+  }
+
+  .match-info p{
+    padding-top: 60px;
+    margin-left: -15px;
+  }
+
+  .match-fb-btn{
+    padding-top: 60px;
+  }
+
+  .avatar-img{
+    padding: 30px;
+    margin-top: 25px;
+  }
+
+  .avatar-img2{
+    padding: 30px;
+    margin-top: 25px;
+  }
+
+.result-header h5{
+  padding-top: 40px;
+  text-align: center;
+}
+
+.result-header p{
+  padding: 20px;
+  text-align: center;
+}
+
+.result-header {
+  margin-top: 50px;
+  margin-left:420px;
+  margin-right: 420px;
+}
+
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 300px;
+  padding-top: 100px;
+  padding-left: 450px;
+}
+
+.profile-bk-btn{
+  margin-right: 150px;
+}
+
+.profile-personal{
+  margin-left: 175px;
+}
+
+.profile-personal dt{
+  margin-top: 0;
+  font-weight: bold;
+  font-size: x-larger;
+}
+
+.logout{
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+}
+
+.logout-header {
+margin-left: 315px;
+}
+
+.logout-btn{
+  margin-right: 140px;
+  margin-top: 30px;
+}
+
+.video-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video{
+  padding-top: 200px;
+}
+
+.skip-btn{
+  padding-right: 53px;
+}
