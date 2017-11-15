@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #ffffff;
 }
 
 .App-logo {
@@ -7,6 +8,9 @@
   height: 80px;
 }
 
+html, body {
+  background-color: #F9FAFB;
+}
 .App-header {
   background-color: #222;
   height: 150px;
@@ -44,12 +48,36 @@
   justify-content: center;
 }
 
+.quote-video{
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+.video-landing {
+  margin-top: 20px;
+  margin-right: 13px;
+}
+
+.testimonal{
+  background-color: purple;
+  display: flex;
+  flex-direction: row;
+}
+
 .linktrip-logo{
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   padding: 350px;
+  background-image: url('/peru.jpg');
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  color: white;
 }
+
 
 .linktrip-logo h1{
   font-size: 500%
@@ -61,19 +89,33 @@ input.sigin-in-button{
   color: white;
 }
 
+.signin-q{
+  font-size: smaller;
+  font-style: italic;
+}
+
 .persona-header {
-   margin-left: 212px;
-   width: 950px;
+
+margin-top: 5%;
+
 }
 
 .persona-header h2{
-  margin-top: 30px;
+  padding: 20px;
 }
 
 div.persona-test{
-  margin-left: 212px;
+
   width: 1200px;
 }
+
+.persona{
+  background-color: #F9FAFB;
+  width: 950px;
+  margin: 0 auto;
+}
+
+
 /*@font-face {
   font-family:'norwester';
   font-style: normal;
@@ -93,18 +135,29 @@ div.persona-test{
   }
 
   .persona-q{
-    margin-left: 315px;
-    margin-top: 40px;
+
+    margin-top: 50px;
     font-weight: bolder;
+    color:black;
   }
 
-  .persona-header-p{
+  .persona-header p{
     margin-bottom: 3px;
     font-weight: lighter;
+    color:black;
   }
+
+  .persona-header h2{
+    color:black;
+  }
+
 
   .multiple-ops{
     margin-left: 60px;
+  }
+
+  .multiple-ops p{
+    color:black;
   }
 
   .question-pp{
@@ -117,9 +170,9 @@ div.persona-test{
   }
 
   .match-made{
-    margin-left: 0px;
     display: flex;
     flex-direction: row;
+    margin-left: 20%;
   }
 
   .match-info{
@@ -140,18 +193,13 @@ div.persona-test{
   }
 
   .avatar-img{
-    padding: 30px;
     margin-top: 25px;
   }
 
-  .avatar-img2{
-    padding: 30px;
-    margin-top: 25px;
-  }
-
-.result-header h5{
-  padding-top: 40px;
+.result-header h4{
+  padding-top: 10px;
   text-align: center;
+  margin: auto;
 }
 
 .result-header p{
@@ -160,9 +208,14 @@ div.persona-test{
 }
 
 .result-header {
-  margin-top: 50px;
-  margin-left:420px;
-  margin-right: 420px;
+  padding-top: 50px;
+  margin-left:500px;
+  margin-right: 500px;
+}
+
+.result-pg{
+    background-color:#F9FAFB;
+    height: 100vh;
 }
 
 .profile-info{
@@ -171,11 +224,13 @@ div.persona-test{
   justify-content: space-evenly;
   padding: 300px;
   padding-top: 100px;
-  padding-left: 450px;
+  padding-left: 39%;
+  background-color: #F9FAFB;
+  color: black;
 }
 
 .profile-bk-btn{
-  margin-right: 150px;
+  margin: 0 auto;
 }
 
 .profile-personal{
@@ -185,34 +240,120 @@ div.persona-test{
 .profile-personal dt{
   margin-top: 0;
   font-weight: bold;
-  font-size: x-larger;
+  font-size: large;
 }
 
+.profile-sv-btn{
+  margin: 0 auto;
+}
+
+.profile-sv-btn button{
+  width:184px;
+}
 .logout{
   display: flex;
   flex-direction: column;
-  padding: 150px;
+  padding: 300px;
+  background-color: #F9FAFB;
+  height: 100vh;
 }
 
-.logout-header {
-margin-left: 315px;
+.logout-header{
+  margin-left: 40%;
 }
 
 .logout-btn{
-  margin-right: 140px;
-  margin-top: 30px;
+  margin-left: 150px;
 }
 
 .video-header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F9FAFB;
+  height:100vh;
 }
 
 .video{
-  padding-top: 200px;
+  padding-top: 250px;
+}
+
+.quote {
+  padding: 100px;
+  padding-right: 150px;
+  font-style: italic;
 }
 
 .skip-btn{
   padding-right: 53px;
+}
+
+.testimonal{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  background-color: #F9FAFB;
+  padding-top: 80px;
+  color:black;
+}
+
+.testimonal h5 {
+  padding: 50px;
+  font-style: italic;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.testimonal p{
+  padding-left: 45%;
+}
+
+.test-avatar {
+  height:200px;
+  margin-right: -66px;
+  margin-left: 60px;
+}
+
+.quote1{
+  margin:60px
+}
+
+.quote2{
+  margin: 60px;
+}
+
+.kep-login-facebook.metro {
+  padding: 3%;
+  padding-bottom: 3%;
+  padding-top: 1%;
+  padding-right: 3%;
+}
+
+button.kep-login-facebook.metro{
+  padding-top:12px;
+  padding-bottom: 45px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+.submit-test-btn{
+  margin: 0 auto;
+}
+
+.profile-btns{
+  margin-right: 50%;
+}
+
+.logout-header{
+  margin-left: 40%;
+}
+
+.testi-avatar{
+  margin:30px;
+}
+
+.gif-logout{
+  margin: 0 auto;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import './App.css';
-import Landing from './container/landing';
 import Signin from './container/signin';
 import Persona from './container/persona';
 import Result from './container/result';
@@ -9,8 +8,7 @@ import Profile from './container/profile';
 import LogOut from './container/logout';
 import Video from './container/video';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
-
+//import GifPlayer from 'react-gif-player';
 //import norwester from '../norwester.ttf';
 
 
@@ -30,6 +28,7 @@ class App extends Component {
         this.props.updateEvents(data);
       });
   }
+
 
   render() {
 

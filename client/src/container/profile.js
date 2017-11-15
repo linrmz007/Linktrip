@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import { Link } from 'react-router-dom';
 import Avatar from 'material-ui/Avatar';
+import TextField from 'material-ui/TextField';
 
 const style = {
   height: 80,
@@ -9,35 +10,74 @@ const style = {
 };
 
 
+const inputStyle = {
+  color:'white',
+}
+
+const changesMade = {};
 
 class Profile extends Component {
+  constructor(props){
+    super(props);
+    const userPicture = localStorage.getItem('picture');
+
+    this.state = {
+      userPicture: userPicture ? userPicture : ''
+    }
+
+  }
+
+  updateChanges = (e) => {
+    this.setState = {inputfield: e.target.value}
+  }
+
+  handleSubmit = (changes) => {
+    console.log('changes here: ', changes);
+  }
+
+
   render() {
     return (
       <div>
         <NavBar/>
         <div className='profile-info'>
           <div>
-             <Avatar style={style} className='avatar-img2' src="images/uxceo-128.jpg" />
+             <Avatar size={100} className='avatar-img2' src={this.state.userPicture} />
           </div>
-          <div class='profile-personal'>
+          <div className='profile-personal'>
              <dl>
               <dt>Age</dt>
                 <dd>28</dd>
               <dt>Location</dt>
                 <dd>Brooklyn, New York</dd>
               <dt>Places Visited</dt>
-                <dd>South East Asia, Japan, India</dd>
+                <dd>
+                  <TextField
+                    hintText="Hint Text"/>
+                </dd>
               <dt>Places to Visit</dt>
-                <dd>Nigeria, Madagascar, Bhutan</dd>
+                <dd>
+                  <TextField
+                  inputStyle={{inputStyle}}
+                    hintText="Hint Text"/>
+                </dd>
               <dt>Travel Buddy Persona</dt>
                 <dd>Spontaneous Sun Seeker.</dd>
             </dl>
             </div>
+            <div className='profile-btns'>
+            <div className='profile-sv-btn'>
+              <button className="button-primary"
+              onChange={this.updateInputValue}
+              onClick={() => this.handleSubmit(changesMade)}
+              >Save Changes</button>
+            </div>
           <Link to={{pathname: '/result'}}>
             <div className='profile-bk-btn'>
-              <button class="button-primary">Back To Matches</button>
+              <button className="button-primary">Back To Matches</button>
             </div>
           </Link>
+          </div>
           </div>
       </div>
     );

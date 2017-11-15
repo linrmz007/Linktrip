@@ -7,15 +7,15 @@ import { Link } from 'react-router-dom';
 const style = {
   height: 200,
   width: 900,
-  marginTop: 30,
+  marginTop: 60,
   textAlign: 'center',
   display: 'inline-block',
 };
 
 
-const question = [
+const questions = [
   {
-    question:'1: You’ve secured yourself a well-deserved day off. How do you spend your time?',
+    question:'You’ve secured yourself a well-deserved day off. How do you spend your time?',
     options:[
       'No point making strict plans, I’ll just see where the wind takes me.',
       'Beach, swimming pool, sunbed. In no particular order.',
@@ -24,7 +24,7 @@ const question = [
     answer:'',
   },
   {
-    question:'2: What tickles your taste buds?',
+    question:'What tickles your taste buds?',
     options:[
       'I like to keep it light and fresh with Mediterranean-inspired meals.',
       'Nothing beats seafood served on a beautiful beachfront…',
@@ -33,7 +33,7 @@ const question = [
     answer:'',
   },
   {
-    question:'3: Your most treasured travel memories involve...',
+    question:'Your most treasured travel memories involve...',
     options:[
       'Being whisked away for a spur-of-the-moment weekend in Rome.',
       'Watching a sunset from the beach on a secluded Thai island.',
@@ -42,7 +42,7 @@ const question = [
     answer:'',
   },
   {
-    question:'4: Are you a messy person?',
+    question:'Are you a messy person?',
     options:[
       'My place looks like it was hit by a volcano.',
       'Some would say Im a neat freak.',
@@ -51,7 +51,7 @@ const question = [
     answer:'',
   },
   {
-    question:'5: As far as religion goes your ideal travel buddy would..',
+    question:'As far as religion goes your ideal travel buddy would..',
     options:[
       'Follow the same religion as me.',
       'Science wins , pro-atheist.',
@@ -60,7 +60,7 @@ const question = [
     answer:'',
   },
   {
-    question:'6: Are you more of a wing-it kind of person or preferred structured plans?',
+    question:'Are you more of a wing-it kind of person or preferred structured plans?',
     options:[
       'Wing-it is my middle name.',
       'Planning means no time will be wasted!',
@@ -69,7 +69,7 @@ const question = [
     answer:'',
   },
   {
-    question:'7: Would you rather be part of a nature show or watch it?',
+    question:'Would you rather be part of a nature show or watch it?',
     options:[
       'Watching is cool, I rather not be eaten by tigers.',
       'The point of nature is being "one" with it, right?',
@@ -78,7 +78,7 @@ const question = [
     answer:'',
   },
   {
-    question:'8: How often are you open about your feelings?',
+    question:'How often are you open about your feelings?',
     options:[
       'I keep it 100 - 100% of the time.',
       'I often keep things to myself.',
@@ -87,7 +87,7 @@ const question = [
     answer:'',
   },
   {
-    question:'9: Does smoking or drinking bother you?',
+    question:'Does smoking or drinking bother you?',
     options:[
       'It smells gross, no thank you.',
       'I am guilty of enjoying both.',
@@ -96,7 +96,7 @@ const question = [
     answer:'',
   },
   {
-    question:'10: Are you a morning lark or a night owl?',
+    question:'Are you a morning lark or a night owl?',
     options:[
       'Im an early riser.',
       'Not a morning person at all.',
@@ -106,25 +106,24 @@ const question = [
   }
 ]
 
-const answerSelected = {};
-
-//mapped over the array of question objects,
-//have my submit button close to working( tweaking it still)
-// prettifying the heck out of it.
-// following your advice
-
 class Persona extends Component {
 
-  submitForm = (answer) => {
-    this.setState({answer: question.answer});
-  }
+  // submitForm = (answer) => {
+  //   this.setState({answer: questions.answer});
+  // }
 
-  optSelector = (e) => {
-    question.answer = e.target.value;
-  }
-
-  handleSubmit = (answers) => {
+  handleSubmit = () => {
+    console.log('question', questions);
+    const answers = questions.map(question => {
+      return {
+        question: question.question,
+        answer: question.answer
+      }
+    });
     console.log('answers', answers);
+    // update youe anwer with user id using key owner
+    // do a fetch POST request to /answers
+
   }
 
 
@@ -132,6 +131,7 @@ class Persona extends Component {
     return (
       <div>
         <NavBar/>
+        <div className='persona'>
           <Paper className="persona-header"
             style={style}
             zDepth={1} >
@@ -148,26 +148,25 @@ class Persona extends Component {
 
          <div className="persona-q">
           {
-           question.map((q, index) =>
-             <FormQuestion
+            questions.map((q, index) =>
+              <FormQuestion
+               number={index}
                key={`key-${index}`}
                question={q}
-               onChange={(e) => {
-               question.answer = e.target.value;
-               answerSelected[index+1] = question.answer;
-              }}
-             />
+               onChange={(q, e) => q.answer = e.target.value}
+              />
             )
           }
          </div>
-          <div>
+          <div className='submit-test-btn'>
           <Link to={{pathname: '/result'}}>
             <input className="button-primary"
             type="submit"
-            onClick={() => this.handleSubmit(answerSelected)}
+            onClick={this.handleSubmit}
             value={'submit'}/>
           </Link>
           </div>
+        </div>
         </div>
       );
     }

@@ -20,11 +20,6 @@ class NavBar extends Component {
       color:'white',
     };
 
-
-
-
-    //console.log(this.context.location);
-
     return (
       <div>
         <AppBar

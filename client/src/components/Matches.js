@@ -8,7 +8,7 @@ import Result from '../container/result';
 
 
 const Matches = () => {
-
+  // const allMathces = {};
   return (
     <div>
     // allMatches && allMatches.map((match =>

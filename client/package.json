@@ -9,9 +9,11 @@
     "koa-router": "^7.2.1",
     "material-ui": "^0.19.4",
     "mongoose": "^4.13.1",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
     "react-facebook-login": "^3.6.2",
+    "react-gif": "^0.1.0",
+    "react-gif-player": "^0.2.2",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17",
     "react-youtube": "^7.5.0"

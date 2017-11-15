@@ -12,24 +12,22 @@ const styles = {
 
 const labelStyle = {
   fontWeight: 'lighter',
+  color:'black',
 }
 
 
 const FormQuestion = (props) => {
 
-
-console.log('fq', props.question.options);
     return(
       <div>
         <p>{props.question.question}</p>
         <RadioButtonGroup name="shipSpeed"
           className='multiple-ops'
-          onChange={props.onChange}
+          onChange={(e) => props.onChange(props.question, e)}
           >
           {
             props.question.options.map(item =>
             <RadioButton
-              ref={(value)=> this.answer = value}
               value={item}
               label={item}
               labelStyle={labelStyle}
@@ -39,7 +37,6 @@ console.log('fq', props.question.options);
             )
           }
         </RadioButtonGroup>
-
       </div>
     );
   }

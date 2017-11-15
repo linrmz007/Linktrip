@@ -1,18 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 import YouTube from 'react-youtube';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 class Video extends React.Component {
   render() {
     const opts = {
-      height: '390',
-      width: '640',
+      height: '650',
+      width: '1100',
       playerVars: {
         autoplay: 1
       }
     };
 
+    const style={
+      root:{
+        backgroundColor: '#1444A3',
+      }
+    }
     return (
       <div className='video-header'>
       <div className='video'>

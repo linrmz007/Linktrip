@@ -36,6 +36,7 @@ const user = {
 }
 
 
+
 // / always follow this procssess until you define yours
 // mock the data
 // render a view with mocked data (mock data should not be inline)
@@ -92,8 +93,10 @@ class Result extends Component {
         <div className='result-pg'>
           <div className='result-header'>
             <Paper styles={styles}
-            zDepth={2}><h5>87% Match!</h5>
-            <p>Matches</p></Paper>
+            zDepth={2}><h4>87% Match!</h4>
+            <p>You are a Spontaneous Sun-Seeker!
+Planning ahead? Pah! That’s for amateurs. You’re more of a ‘caution-to-the-wind’ type of traveller, who always has their passport in their pocket.</p>
+</Paper>
           </div>
 
           {
@@ -102,17 +105,17 @@ class Result extends Component {
               return (
                   <div className='match-made' key={`match-${idx}`}>
                     <Paper style={style} zDepth={2} className="match-info">
-                      <Avatar className='avatar-img' src={match.picture} />
-                      <p>Another ideal travel buddy match</p>
+                      <Avatar size={90} className='avatar-img' src={match.picture} />
+                      <p>An ideal travel buddy match!</p>
 
                       <div className="match-fb-btn">
-                        <button className="button-primary">Connect via FB</button>
+                        <button className="button-primary">See Profile</button>
                       </div>
                     </Paper>
                   </div>
                 )
               })
-              : <Paper> Please wait we havent found a match!! </Paper>
+              : <Paper><p>Please wait we havent found a match!! </p></Paper>
           }
 
           </div>
