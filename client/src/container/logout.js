@@ -17,7 +17,7 @@ class LogOut extends Component {
     return (
       <div className="logout">
       <div className='gif-logout'>
-        <iframe src="https://giphy.com/embed/3ov9k06VQ0SU6f15rW" width="480" height="268" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/3ov9k06VQ0SU6f15rW" width="680" height="468" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
         </div>
 
         <Link to={{pathname: '/signin'}}>
