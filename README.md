@@ -1,14 +1,17 @@
 # Linktrip: A travel buddy app
 
-# Description:
+Description:  
+------------- 
 LinkTrip is an app that allows you meet people to travel with, sign up and take a personality test. Then see what percentage you match with other users.
 
-# Dependencies:
+Dependencies:  
+------------- 
 * Node
 * Express
 * MongoDB
 
-# Installation:
+Installation:
+------------- 
 * Clone this repo and cd into client
 * Run npm install
 * Run npm start
