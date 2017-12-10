@@ -24,5 +24,5 @@ Installation:
 
 License
 ------ 
-Bubble is licensed under the MIT license.
+LinkTrip is licensed under the MIT license.
 
