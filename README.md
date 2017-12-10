@@ -2,7 +2,7 @@
 
 Description:  
 ------------- 
-LinkTrip is a match-making travel buddy app. Users take a personality test and are match with people they scored a high percentage with.
+LinkTrip is a match-making travel buddy app. Users take a personality test and are matched with people they score a high percentage with.
 
 Dependencies:  
 ------------- 
