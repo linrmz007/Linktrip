@@ -1,20 +1,22 @@
 # Linktrip: A travel buddy app
 
-Description:  
+Description  
 ------------- 
 LinkTrip is a match-making travel buddy app. Users take a personality test and are matched with people they score a high percentage with.
 
-Dependencies:  
-------------- 
-* Node
-* Express
-* MongoDB
-
-Installation:
+Installation
 ------------- 
 * `git clone this repo and cd into client`
 * Run `npm install`
 * Run `npm start`
+
+Tech Stack  
+------------- 
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Node](https://nodejs.org/en/)
+* [Koa](http://koajs.com/)
+* [MongoDB](https://www.mongodb.com/)
 
 ![ltlsignin](https://user-images.githubusercontent.com/18400889/33796155-527fe308-dcef-11e7-9473-318480131bd9.png)
 
