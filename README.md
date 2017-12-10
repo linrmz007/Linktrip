@@ -14,7 +14,6 @@ Tech Stack
 ------------- 
 * [React](https://reactjs.org/)
 * [Redux](https://redux.js.org/)
-* [Node](https://nodejs.org/en/)
 * [Koa](http://koajs.com/)
 * [MongoDB](https://www.mongodb.com/)
 
