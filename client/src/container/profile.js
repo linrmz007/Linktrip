@@ -9,9 +9,16 @@ const style = {
   width: 80,
 };
 
+const styles = {
+  color:'white',
+}
 
 const inputStyle = {
   color:'white',
+}
+
+const inputProfile = {
+  color:"white",
 }
 
 const changesMade = {};
@@ -42,7 +49,7 @@ class Profile extends Component {
         <NavBar/>
         <div className='profile-info'>
           <div>
-             <Avatar size={100} className='avatar-img2' src={this.state.userPicture} />
+             <Avatar size={150} className='avatar-img2' src={this.state.userPicture} />
           </div>
           <div className='profile-personal'>
              <dl>
@@ -55,12 +62,13 @@ class Profile extends Component {
               <dt>Places Visited</dt>
                 <dd>
                   <TextField
+                    className={inputProfile}
                     hintText="Name some places"/>
                 </dd>
               <dt>Places to Visit</dt>
                 <dd>
                   <TextField
-                  inputStyle={{inputStyle}}
+                  inputStyle={inputStyle}
                     hintText="Where do you want to go?"/>
                 </dd>
             </dl>

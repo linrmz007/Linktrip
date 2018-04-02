@@ -14,6 +14,7 @@ const style = {
   display: 'flex',
   flexDirection: 'row',
   justifyContent:'space-around',
+  backgroundColor:'#232323',
 };
 
 const styles = {
