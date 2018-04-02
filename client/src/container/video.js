@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 class Video extends React.Component {
   render() {
     const opts = {
-      height: '650',
-      width: '1100',
+      height: '450',
+      width: '800',
       playerVars: {
         autoplay: 1
       }
@@ -29,7 +29,7 @@ class Video extends React.Component {
       </div>
       <Link to={{pathname: '/persona'}}>
         <div className='skip-btn'>
-          <button className="button-primary">SKIP</button>
+          <input class="button-primary" type="submit" value="SKip" />
         </div>
       </Link>
       </div>

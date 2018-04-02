@@ -1,16 +1,15 @@
-const Koa = require('koa'); // npm install EVERYTHIING
+const Koa = require('koa');
 const app = new Koa();
 const bodyParser = require('koa-bodyparser');
 const cors = require('koa-cors');
-
 const router = require('./router');
 const db = require('./db');
 
-app
-  .use(cors())
-  .use(bodyParser())
-  .use(router.routes())
-  .use(router.allowedMethods())
+
+app.use(cors())
+app.use(bodyParser())
+app.use(router.routes())
+app.use(router.allowedMethods())
 
 app.listen(4000, () => {
   console.log('listening on port 4000!');

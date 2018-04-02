@@ -10,6 +10,7 @@ const style = {
   marginTop: 60,
   textAlign: 'center',
   display: 'inline-block',
+  backgroundColor:'#232323',
 };
 
 
@@ -106,6 +107,7 @@ const questions = [
   }
 ]
 
+
 class Persona extends Component {
 
   // submitForm = (answer) => {
@@ -121,15 +123,14 @@ class Persona extends Component {
       }
     });
     console.log('answers', answers);
-    // update youe anwer with user id using key owner
+    // update your anwer with user id using key owner
     // do a fetch POST request to /answers
-
   }
 
 
   render() {
     return (
-      <div>
+      <div className='quizPage'>
         <NavBar/>
         <div className='persona'>
           <Paper className="persona-header"

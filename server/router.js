@@ -3,7 +3,9 @@ const controller = require('./controller/controllers')
 
 const router = new Router;
 
-router.post('/', controller.saveUser);
+router.post('/user', controller.saveUser);
+//router.post('/answer', controller.createAnswer);
+//router.post('/', controller.createUser);
 //router.get('/', controller.getHandler);
 
 module.exports = router;

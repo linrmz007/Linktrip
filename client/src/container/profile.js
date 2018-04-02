@@ -46,23 +46,23 @@ class Profile extends Component {
           </div>
           <div className='profile-personal'>
              <dl>
-              <dt>Age</dt>
-                <dd>28</dd>
               <dt>Location</dt>
                 <dd>Brooklyn, New York</dd>
+              <dt>Age</dt>
+                <dd>28</dd>
+              <dt>Travel Buddy Persona</dt>
+                <dd>Spontaneous Sun Seeker.</dd>
               <dt>Places Visited</dt>
                 <dd>
                   <TextField
-                    hintText="Hint Text"/>
+                    hintText="Name some places"/>
                 </dd>
               <dt>Places to Visit</dt>
                 <dd>
                   <TextField
                   inputStyle={{inputStyle}}
-                    hintText="Hint Text"/>
+                    hintText="Where do you want to go?"/>
                 </dd>
-              <dt>Travel Buddy Persona</dt>
-                <dd>Spontaneous Sun Seeker.</dd>
             </dl>
             </div>
             <div className='profile-btns'>

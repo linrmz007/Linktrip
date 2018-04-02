@@ -1,5 +1,6 @@
 import React from 'react';
 import {RadioButton, RadioButtonGroup} from 'material-ui/RadioButton';
+import RadioButtonUnchecked from 'material-ui/svg-icons/toggle/radio-button-unchecked'
 
 const styles = {
   block: {
@@ -12,7 +13,11 @@ const styles = {
 
 const labelStyle = {
   fontWeight: 'lighter',
-  color:'black',
+  color:'white',
+}
+
+const iconStyle = {
+  color:'white',
 }
 
 
@@ -20,7 +25,7 @@ const FormQuestion = (props) => {
 
     return(
       <div>
-        <p>{props.question.question}</p>
+        <p className='form_questions'>{props.question.question}</p>
         <RadioButtonGroup name="shipSpeed"
           className='multiple-ops'
           onChange={(e) => props.onChange(props.question, e)}
@@ -30,6 +35,8 @@ const FormQuestion = (props) => {
             <RadioButton
               value={item}
               label={item}
+              iconStyle={iconStyle}
+              uncheckedIcon={<RadioButtonUnchecked style={{ fill: 'white' }} />}
               labelStyle={labelStyle}
               style={styles.radioButton}
               key={`key-${item}`}

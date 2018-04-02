@@ -1,0 +1,5 @@
+//  defined resultIsANewArray = array.map((eachItemInArray, iterateeIndex) => {
+//    return AConstructedObjectFromEachItemInArray;
+//  });
+
+example
