@@ -93,13 +93,13 @@ class Result extends Component {
       <NavBar/>
         <div className='result-pg'>
           <div className='result-header'>
-            <Paper styles={styles}
-            zDepth={2}><h4>87% Match!</h4>
-            <p>You are a Spontaneous Sun-Seeker!
-Planning ahead? Pah! That’s for amateurs. You’re more of a ‘caution-to-the-wind’ type of traveller, who always has their passport in their pocket.</p>
-</Paper>
+            <Paper
+            styles={styles}
+            zDepth={2}>
+              <h4>87% Match!</h4>
+              <p>You are a Spontaneous Sun-Seeker! Planning ahead? Pah! That’s for amateurs. You’re more of a ‘caution-to-the-wind’ type of traveller, who always has their passport in their pocket.</p>
+            </Paper>
           </div>
-
           {
             this.state.allMatches.length > 0
             ? this.state.allMatches.map((match, idx) => {

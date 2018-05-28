@@ -18,6 +18,7 @@ class Video extends React.Component {
         backgroundColor: '#1444A3',
       }
     }
+
     return (
       <div className='video-header'>
       <div className='video'>
