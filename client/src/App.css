@@ -258,7 +258,8 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; }
+  border: 1px solid #fff;
+   }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -608,6 +609,7 @@ div.persona-test{
     font-weight: lighter;
     color:white;
     text-align: center;
+    font-style: italic;
   }
 
   .persona-header h2{
@@ -620,8 +622,10 @@ div.persona-test{
   }
 
   .form_questions{
-    text-align: center;
-    color: white;
+    text-align: left;
+    color: #fff;
+    font-size: 23px;
+    margin-top: 35px;
   }
 
   .multiple-ops p{
@@ -668,6 +672,10 @@ div.persona-test{
     margin-top: 25px;
     border: 3px solid #33C3F0
   }
+
+.avatar-img2 {
+  border: 3px solid #33C3F0;
+}
 
 .result-header h4{
   padding-top: 30px;

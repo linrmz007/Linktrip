@@ -57,10 +57,19 @@ class Result extends Component {
       allMatches:[],
     }
 
-    this.getRandomBuddies();
+    //this.getRandomBuddies();
+  }
+
+  componentWillMount() {
+    //console.log
+  }
+
+  componentDidMount() {
+    this.getRandomBuddies()
   }
 
   getBuddy = (data) => {
+    console.log('all matchesssss', data)
     this.setState({
       allMatches: this.state.allMatches.concat(data),
     })
@@ -78,7 +87,10 @@ class Result extends Component {
       const matches = data.results.map(user => {
         return {
           picture: user.picture.large,
-          email: user.email
+          email: user.email,
+          location: user.location,
+          gender: user.gender,
+          username: user.login.username
         }
       });
       this.getBuddy(matches);
@@ -86,8 +98,6 @@ class Result extends Component {
   }
 
   render() {
-    this.getRandomBuddies();
-
     return (
       <div>
       <NavBar/>
@@ -110,7 +120,9 @@ class Result extends Component {
                       <p>An ideal travel buddy match!</p>
 
                       <div className="match-fb-btn">
+                        <Link to={`/profile/${match.username}`}>
                         <button className="button-primary">See Profile</button>
+                        </Link>
                       </div>
                     </Paper>
                   </div>

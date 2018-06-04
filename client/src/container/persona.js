@@ -138,12 +138,12 @@ class Persona extends Component {
             zDepth={1} >
            <h2>What kind of travel buddy are you?</h2>
              <p className='persona-header-p'>
-              Want to find an ideal travel buddy but dont know where to start?
+              Need to find an ideal travel buddy but dont know where to start?
              </p>
              <p>
               Fret not.
               Our handy traveler personality quiz will set you on
-              the right path...
+              the right path.
              </p>
          </Paper>
 
