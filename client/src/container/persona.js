@@ -10,6 +10,7 @@ const style = {
   marginTop: 60,
   textAlign: 'center',
   display: 'inline-block',
+  backgroundColor:'#232323',
 };
 
 
@@ -106,6 +107,7 @@ const questions = [
   }
 ]
 
+
 class Persona extends Component {
 
   // submitForm = (answer) => {
@@ -121,15 +123,14 @@ class Persona extends Component {
       }
     });
     console.log('answers', answers);
-    // update youe anwer with user id using key owner
+    // update your anwer with user id using key owner
     // do a fetch POST request to /answers
-
   }
 
 
   render() {
     return (
-      <div>
+      <div className='quizPage'>
         <NavBar/>
         <div className='persona'>
           <Paper className="persona-header"
@@ -137,12 +138,12 @@ class Persona extends Component {
             zDepth={1} >
            <h2>What kind of travel buddy are you?</h2>
              <p className='persona-header-p'>
-              Want to find an ideal travel buddy but dont know where to start?
+              Need to find an ideal travel buddy but dont know where to start?
              </p>
              <p>
               Fret not.
               Our handy traveler personality quiz will set you on
-              the right path...
+              the right path.
              </p>
          </Paper>
 

@@ -65,18 +65,6 @@ class Signin extends Component {
             </Link>
             <p className='signin-q'>Your dream destination with an ideal travel buddy is just links away..</p>
       </div>
-          <div className="testimonal">
-            <div className='testi-avatar'>
-              <h5 className='quote1'>LinkTrip is the best Travel buddy app EVER!</h5>
-              <p>-Dan</p>
-            </div>
-            <img className='test-avatar' src='/sampleavatar.png' alt='avatar'/>
-            <img className='test-avatar' src='/lamorenapic.png' alt='avatar'/>
-            <div className='testi-avatar'>
-              <h5 className='quote2'>I met my bestfriend through LinkTrip, we had a blast in Vietnam.</h5>
-              <p>-Lindsey</p>
-            </div>
-          </div>
       </div>
     );
   }
